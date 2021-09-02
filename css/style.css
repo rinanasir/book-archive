@@ -1,0 +1,15 @@
+body{
+    background-color: rgba(206, 206, 226, 0.822);
+}
+
+#spinner{
+    display: none;
+}
+
+#search-count{
+    display: none;
+}
+
+#error-text{
+    display: none;
+}

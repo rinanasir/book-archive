@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- book search area -->
+    <h1 class="text-center text-success my-3">Search for your Book</h1>
+    <div class="input-group w-50 mx-auto mb-3">
+        <input id="search-field" type="text" class="form-control" placeholder="Type book name"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchBook()" class="btn btn-outline-secondary" type="button"
+            id="button-search">Search</button>
+    </div>
+
+    <!-- spinner -->
+    <div id="spinner" class="text-center">
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+        </button>
+    </div>
+
+    <!-- total search result count -->
+    <div id="search-count" class="text-center text-secondary my-3">
+        <h5>About <span id="result-count">0</span> results found</h5>
+    </div>
+
+    <!-- error message -->
+    <div>
+        <h3 id="error-text" class="text-danger text-center">Sorry, no match found. Try searching again.</h3>
+    </div>
+
+    <!-- book search result area -->
+    <div id="search-result" class="d-flex justify-content-center row row-cols-1 row-cols-md-3 g-4 mx-5">
+
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- index js -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
